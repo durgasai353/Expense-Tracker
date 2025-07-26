@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="home.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+</head>
+<body>
+
+  <h1>EXPENSE TRACKER</h1>
+
+  <form id="expenseForm">
+    <div class="input-group">
+      <input type="text" id="expName" placeholder="Expense Name" required />
+      <input type="text" id="amount" placeholder="Amount" required />
+      <select id="category" required>
+        <option value="">Select Category</option>
+        <option value="Food">Food</option>
+        <option value="Transport">Transport</option>
+        <option value="Bills">Bills</option>
+        <option value="Shopping">Shopping</option>
+        <option value="Other">Other</option>
+      </select>
+      <input type="date" id="date" required />
+    </div>
+    <div class="button-wrapper">
+      <button type="submit">Add</button>
+    </div>
+  </form>
+
+<div id="summary-bar" style="display: flex; justify-content: space-between; align-items: center; margin: 20px 0;">
+  <div style="font-weight: bold; font-size: 18px; color: #333;">
+    Total Spent: <span id="totalAmount" style="color: #2b7a8b;">₹0</span>
+  </div>
+
+  <div style="display: flex; align-items: center;">
+    <label for="sort" style="margin-right: 8px; font-weight: 500;">Sort By:</label>
+    <select id="sort" style="padding: 5px 10px; border-radius: 5px;">
+      <option value="">-- None --</option>
+      <option value="date">Date</option>
+      <option value="amount">Amount</option>
+    </select>
+  </div>
+</div>
+
+
+  <table id="resultTable">
+    <thead>
+      <tr>
+        <th>Expense</th>
+        <th>Amount</th>
+        <th>Category</th>
+        <th>Date</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="resultBody">
+      <!-- Expenses will be inserted here -->
+    </tbody>
+  </table>
+
+
+  <script src="home.js"></script>
+</body>
+</html>

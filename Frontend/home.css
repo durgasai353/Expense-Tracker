@@ -1,0 +1,157 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+h1 {
+  text-align: center;
+  color: rgba(48,122,148,100%);
+}
+
+form {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.input-group input,
+.input-group select {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  min-width: 150px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.button-wrapper {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.button-wrapper button {
+  padding: 10px 60px;
+  font-size: 18px;
+  margin-top:30px;
+  background-color:rgba(48,122,148,100%);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button-wrapper button:hover {
+  background-color: rgba(48,122,148,80%);;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  color:#307a94;
+}
+
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+
+
+@media (max-width: 600px) {
+  .input-group {
+    flex-direction: column;
+  }
+}
+select {
+  padding: 10px 35px 10px 12px; /* Top Right Bottom Left */
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px;
+}
+.sort-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 50px;
+  width: 90%; /* Optional: to keep it aligned with the table */
+}
+/* Make table text black */
+#resultTable td{
+  color: #000;
+} 
+#resultTable th {
+  background-color: #307a94;
+  color:white
+}
+
+/* Action buttons styling */
+.action-btn {
+  padding: 6px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 2px;
+  font-size: 16px;
+}
+
+/* Edit - primary color (like Add button) */
+.action-btn.edit {
+  background-color: #307a94;
+  color: white;
+}
+
+/* Delete - red */
+.action-btn.delete {
+  background-color: #e63946;
+  color: white;
+}
+
+/* Save - green */
+.action-btn.save {
+  background-color: #2ecc71;
+  color: white;
+}
+
+/* Cancel - red */
+.action-btn.cancel {
+  background-color: #e74c3c;
+  color: white;
+}
+/* Input and select fields inside the table row */
+#resultTable input[type="text"],
+#resultTable input[type="number"],
+#resultTable input[type="date"],
+#resultTable select {
+  width: 100%;
+  padding: 6px 18px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+/* Optional: add spacing between cells */
+#resultTable td {
+  padding: 10px;
+}
+.totalDisplay #rup{
+color: #307a94;
+}
+
+
